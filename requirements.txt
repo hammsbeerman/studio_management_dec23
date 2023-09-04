@@ -1,0 +1,10 @@
+django >=3.2,<4.0
+#optional:
+#gunicorn
+#psycopg2-binary
+#django-dotenv
+#pint
+#django-htmx
+#django-mptt
+#django-forms-dynamic
+#django-widget-tweaks
