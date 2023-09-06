@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="card">
+    <div class="card-header">
+        {{ customer_record }}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">
+        <td>{{ customer_record.first_name }}</td>
+        <td>{{ customer_record.last_name }}</td>
+        <td>{{ customer_record.city }}</td>
+        <td>{{ customer_record.state }}</td>
+        <td>{{ customer_record.created }}</td>
+      </h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="{% url 'customer_list' %}" class="btn btn-secondary">Back</a>
+      <a href="{% url 'delete_customer' customer_record.id %}" class="btn btn-danger">Delete</a>
+      <a href="{% url 'update_customer' customer_record.id%}" class="btn btn-secondary">Update</a>    
+    </div>
+  </div>
+
+
+
+{% endblock %}
