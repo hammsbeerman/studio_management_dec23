@@ -1,8 +1,9 @@
 from django.db import models
 
 class Customer(models.Model):
-    first_name = models.CharField('First Name', max_length=100, blank=False, null=False)
-    last_name = models.CharField('Last Name', max_length=100, blank=False, null=False)
+    company_name = models.CharField('Company Name', max_length=100, blank=True, null=True)
+    first_name = models.CharField('First Name', max_length=100, blank=True, null=True)
+    last_name = models.CharField('Last Name', max_length=100, blank=True, null=True)
     address1 = models.CharField('Address 1', max_length=100, blank=True, null=True)
     address2 = models.CharField('Adddress 2', max_length=100, blank=True, null=True)
     city = models.CharField('City', max_length=100, null=True)
@@ -17,4 +18,4 @@ class Customer(models.Model):
     active = models.BooleanField(default=True)
 
     def __str__(self):
-        return (f"{self.first_name} {self.last_name}") 
+        return (f"{self.company_name} {self.first_name} {self.last_name}") 

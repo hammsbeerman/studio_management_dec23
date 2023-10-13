@@ -1,1 +1,7 @@
+This is the current operating directory
+
 https://www.youtube.com/watch?v=IJnccWS_sCs&list=PLCC34OHNcOtoyANMQIu0lqN47nz-0byaJ&index=3
+
+State Dropdown box
+
+HTMX - https://www.youtube.com/watch?v=YXzb4tw2IrI

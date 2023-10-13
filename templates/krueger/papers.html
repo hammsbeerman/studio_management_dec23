@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+<select class="custom-select mb-4" 
+    name="paper" 
+    hx-get="{% url 'papersizes' %}"
+    hx-trigger="change"
+    hx-target="#papersizes">
+
+    <option selected>Select Paper stock</option>
+    {% for paper in papers %}
+        <option value="{{paper.pk}}">{{ paper.description }}</option>
+        {% endfor %}
+</select>
+
+<div id="papersizes">
+    {% include 'krueger/partials/papersize.html' %}
+</div>
+
+
+
+
+
+{% endblock %}

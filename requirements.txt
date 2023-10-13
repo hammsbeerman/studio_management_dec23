@@ -4,7 +4,10 @@ django >=3.2,<4.0
 #psycopg2-binary
 #django-dotenv
 #pint
-#django-htmx
+django-htmx
 #django-mptt
 #django-forms-dynamic
-#django-widget-tweaks
+django-widget-tweaks
+django-crispy-forms
+crispy-bootstrap5
+django-formtools
