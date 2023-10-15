@@ -50,6 +50,7 @@ LOCAL_APPS = [
     'customers',
     'vendors',
     'workorders',
+    'finance',
     'crispy_forms',
     'crispy_bootstrap5',
     'formtools',

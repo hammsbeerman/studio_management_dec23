@@ -23,22 +23,23 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Customers
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="{% url 'customer_list' %}">Customer List</a></li>
-              <li><a class="dropdown-item" href="{% url 'add_customer' %}">Add Customer</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Workorders
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{% url 'krueger-print' %}">Add Krueger Workorder</a></li>
               <!-- <li><a class="dropdown-item" href="#">Paper dropdown</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Finance
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'finance' %}">Finance Main</a></li>
+              <li><a class="dropdown-item" href="{% url 'add_bill_payable' %}">Add Account Payable</a></li>
+              <li><a class="dropdown-item" href="{% url 'add_daily_sale' %}">Add Daily Sales</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
           {% endif %}
